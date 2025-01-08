@@ -1,3 +1,4 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -12,7 +13,6 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
-
 }
 
 body {
@@ -22,65 +22,91 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: var(--dark-slate-grey);
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h4 {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+
 p {
-    font-family: 'Roboto';
-    font-weight: 400
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
-/* General styles end */
-
-.container{
+.container {
     background-color: var(--white);
     display: flex;
-    justify-items: center;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     max-width: 800px;
+    overflow: hidden;
 }
 
-
-
 .form-div {
-  display: flex;
-  flex-direction: column;
-  margin-top: 125px;
-  margin-left: 40px;
-
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    max-width: 350px;
 }
 
 .updated {
     text-align: left;
     padding-bottom: 25px;
-    
 }
 
 .updated h1 {
-    margin: 20px;
+    margin-bottom: 15px;
+    font-size: 45px;
+    
 }
+
+.updated p {
+
+    width: 300px;
+    
+}
+
 
 .image-check {
     display: flex;
-    justify-content: left;
     align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
-
+    margin: 10px 0;
 }
 
 .image-check img {
     margin-right: 15px;
 }
 
-
 .image-contain {
     padding: 15px;
+}
+
+#email {
+    font-size: 20px;
+}
+
+#email:focus {
+    border: 1px solid black;
+}
+
+
+button {
+    background-color: var(--tomato);
+    color: var(--white);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 60%);
 }
 
 
