@@ -48,6 +48,7 @@ p {
     border-radius: 20px;
     max-width: 750px;
     overflow: hidden;
+    width: clamp(400px, 700px)
 }
 
 .form-div {
@@ -130,20 +131,47 @@ button {
     margin-top: 20px;
     width: 100%;
     
-    
 }
 
 button:hover {
     background-color: var(--tomato);
 }
 
+/* Message */
+.success {
+    background-color: var(--white);
+    max-width: 400px;
+    height: 450px;
+    padding: 60px;
+    border-radius: 20px;
+   
+    
+    
+}
+
+.img-class img {
+    padding-bottom: 10px;
+
+    
+}
+
+
+
+.success h1 {
+    font-size: 40px;
+   
+}
+
+.success p {
+    padding-top: 15px;
+    line-height: 1.4;
+    
+}
+
+
 /* Media Queries */
 
-@media only screen and (min-width: 500px) {
-    .success {
-        display: none;
-    }
-}
+
 
 
 @media only screen and (max-width: 780px) {
