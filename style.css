@@ -196,7 +196,7 @@ button:hover {
     .container {
         display: flex;
         flex-direction: column-reverse;
-        
+        max-height: 100vh;
         width: min(400px,100vw);
         
        
@@ -209,7 +209,11 @@ button:hover {
     .image-check {
         padding: 5px;
         
-        
+    }
+
+    .form-div {
+    margin: 0px;
+    
     }
 
 }
