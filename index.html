@@ -42,13 +42,19 @@
         </div>
       </div>
 
-      <form class="form-invalid" action="message.html">
+      <form class="form-main-container" action="message.html">
+
+        <div class="form-container">
+
+          <label class="toolbar" for="email">Email address </label>
+          <p class="toolbar" id="error">Valid Email Required</p>
+          
+
+        </div>
         
-        <input class="form-email" type="email" name="email" id="emailInput" placeholder="email@company.com" required>
+        <input class="form-main-email" type="email" name="email" id="emailInput" placeholder="email@company.com" required>
 
-        <input class="form-sumbit" type="formSubmit" value="Subscribe to monthly newsletter">
-
-      
+        <input class="form-main-submit" type="submit" id="formSubmit" value="Subscribe to monthly newsletter">
 
       </form>
 
@@ -58,8 +64,6 @@
     <div class="image-contain">
       <img src="assets/images/illustration-sign-up-desktop.svg" alt="Illustration of a sign-up form">
     </div>
-
-    
 
 </body>
 </html>
