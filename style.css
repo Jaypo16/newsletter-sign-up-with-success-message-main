@@ -197,25 +197,23 @@ button:hover {
         display: flex;
         flex-direction: column-reverse;
         max-height: 100vh;
-        width: min(400px,100vw);
-        
-       
+        width: min(400px, 90vw); /* Allow the container to adapt within the viewport */
+        padding: 20px; /* Add padding to avoid inputs being cut off */
+    }
+
+    .form-div {
+        margin: 20px 0; /* Restore some margin for better spacing */
+        width: 100%; /* Ensure it spans the container width */
+    }
+
+    .form-main-email, 
+    .form-main-submit {
+        width: 100%; /* Ensure inputs span the full available width */
     }
 
     .image-contain {
         padding: 0px;
     }
-
-    .image-check {
-        padding: 5px;
-        
-    }
-
-    .form-div {
-    margin: 0px;
-    
-    }
-
 }
 
 /* Message Pop up */
